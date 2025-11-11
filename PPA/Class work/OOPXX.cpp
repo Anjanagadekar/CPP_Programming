@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+
+class Arithmatic
+{
+    public:
+            int iNo1;
+            int iNo2;
+
+    Arithmatic()
+    {
+        iNo1=0;
+        iNo2=0;
+    }
+    Arithmatic(int A, int B)
+    {
+        iNo1=A;
+        iNo2=B;
+    }
+    int Addition()
+    {
+        int iAns=0;
+        iAns=iNo1+iNo2;
+        return iAns;
+    }
+    int Subtraction()
+    {
+        int iAns=0;
+        iAns=iNo1-iNo2;
+        return iAns;
+    }
+};
+int main()
+{
+    Arithmatic Aobj1(11,10);
+    Arithmatic Aobj2(25,20);
+
+    int iRet=0;
+    
+    iRet=Aobj1.Addition();
+    cout<<"Addition is:"<<iRet<<"\n";
+
+    iRet=Aobj1.Subtraction();
+    cout<<"Subtraction is:"<<iRet<<"\n";
+
+    iRet=Aobj2.Addition();
+    cout<<"Addition is:"<<iRet<<"\n";
+
+    iRet=Aobj2.Subtraction();
+    cout<<"Subtraction is:"<<iRet<<"\n";
+
+    return 0;
+
+}
